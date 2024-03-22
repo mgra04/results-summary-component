@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-red: hsl(0, 100%, 67%);
+  --clr-yellow: hsl(39, 100%, 56%);
+  --clr-green: hsl(166, 100%, 37%);
+  --clr-blue: hsl(234, 85%, 45%);
+
+  --clr-bg-slate-blue: hsl(252, 100%, 67%);
+  --clr-bg-royal-blue: hsl(241, 81%, 54%);
+
+  --clr-circle-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-circle-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-pale-blue: hsl(221, 100%, 96%);
+  --clr-neutral-light-lavender: hsl(241, 100%, 89%);
+  --clr-neutral-greyish-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 44fr 56fr;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.4rem 5.8rem 4rem 5.8rem;
+  border-radius: 0 0 3.2rem 3.2rem;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+  box-shadow: 0 3rem 6rem 0 rgba(61, 108, 236, 0.15);
+}
+
+.your-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.results-title {
+  color: var(--clr-neutral-light-lavender);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.results-number {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: var(
+    --Gradient-2,
+    linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    )
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-number div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-number {
+  color: var(--clr-neutral-white);
+  text-align: center;
+  font-size: 5.6rem;
+  font-weight: 800;
+  line-height: 7.2rem;
+}
+
+.secondary-number {
+  color: var(--clr-neutral-light-lavender);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.results-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.description-title {
+  color: var(--clr-neutral-white);
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--clr-neutral-light-lavender);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.summary {
+  padding: 2.4rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.summary-title {
+  margin-left: 0.2rem;
+  color: var(--clr-neutral-greyish-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 1.6rem;
+  border-radius: 1.2rem;
+}
+
+.element-left {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.element-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.element-right {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.bold-text {
+  color: var(--clr-neutral-greyish-blue);
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.light {
+  opacity: 0.5;
+}
+
+.light__red {
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+
+.light__yellow {
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+
+.light__green {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+
+.light__blue {
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+
+.red {
+  color: var(--clr-red);
+}
+
+.yellow {
+  color: var(--clr-yellow);
+}
+
+.green {
+  color: var(--clr-green);
+}
+
+.blue {
+  color: var(--clr-blue);
+}
+
+.btn {
+  color: var(--clr-neutral-white);
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.6rem 0;
+  border: none;
+  background: var(--clr-neutral-greyish-blue);
+  border-radius: 999px;
+  transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+
+@media (min-width: 75rem) {
+  body {
+    background-color: var(--clr-neutral-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    background-color: var(--clr-neutral-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 73.6em;
+    border-radius: 3.2em;
+    overflow: hidden;
+  }
+
+  .results {
+    height: 100%;
+    width: 100%;
+    padding: 3.8em 5.4em 5.5em 5.4em;
+    border-radius: 3.2em;
+  }
+
+  .your-results {
+    gap: 0;
+  }
+
+  .results-title {
+    font-size: 2.4em;
+    margin-bottom: 3.5rem;
+  }
+
+  .results-number {
+    width: 20em;
+    height: 20em;
+    margin-bottom: 2.8em;
+  }
+
+  .main-number {
+    font-size: 7.2em;
+  }
+
+  .secondary-number {
+    font-size: 1.8em;
+  }
+
+  .results-description {
+    gap: 1.4em;
+  }
+
+  .description-title {
+    font-size: 3.2em;
+  }
+
+  .description {
+    font-size: 1.8em;
+    padding: 0 1rem;
+  }
+
+  .summary {
+    padding: 3.8em 4em 4.6em 4em;
+    gap: 0;
+  }
+
+  .summary-title {
+    font-size: 2.4em;
+    margin-bottom: 2.8rem;
+  }
+
+  .element {
+    padding: 1.6em 1.6em;
+  }
+
+  .element.light__blue {
+    margin-bottom: 4.1em;
+  }
+
+  .element-title,
+  .bold-text {
+    font-size: 1.8em;
+  }
+}

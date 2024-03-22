@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="card">
+      <div class="results">
+        <div class="your-results">
+          <h1 class="results-title">Your Result</h1>
+          <div class="results-number">
+            <div>
+              <span class="main-number">76</span>
+              <p class="secondary-number">of 100</p>
+            </div>
+          </div>
+          <div class="results-description">
+            <h2 class="description-title">Great</h2>
+            <p class="description">
+              Your performance exeed 65% of the people conducting the test here!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <h1 class="summary-title">Summary</h1>
+        <div class="summary-list">
+          <div class="element light__red">
+            <div class="element-left">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="thunder icon"
+                class="element-icon red"
+              />
+              <h2 class="element-title red">Reaction</h2>
+            </div>
+            <div class="element-right">
+              <p class="bold-text dark">80</p>
+              <p class="bold-text light">/ 100</p>
+            </div>
+          </div>
+
+          <div class="element light__yellow">
+            <div class="element-left">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt="brain icon"
+                class="element-icon yellow"
+              />
+              <h2 class="element-title yellow">Memory</h2>
+            </div>
+            <div class="element-right">
+              <p class="bold-text dark">92</p>
+              <p class="bold-text light">/ 100</p>
+            </div>
+          </div>
+
+          <div class="element light__green">
+            <div class="element-left">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt="message icon"
+                class="element-icon green"
+              />
+              <h2 class="element-title green">Verbal</h2>
+            </div>
+            <div class="element-right">
+              <p class="bold-text dark">61</p>
+              <p class="bold-text light">/ 100</p>
+            </div>
+          </div>
+
+          <div class="element light__blue">
+            <div class="element-left">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt="eye icon"
+                class="element-icon blue"
+              />
+              <h2 class="element-title blue">Visual</h2>
+            </div>
+            <div class="element-right">
+              <p class="bold-text dark">73</p>
+              <p class="bold-text light">/ 100</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn">Continue</button>
+      </div>
+    </main>
+  </body>
+</html>
